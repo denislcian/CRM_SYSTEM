@@ -1,0 +1,11 @@
+# SISTEMA CRM - DEPENDENCIAS
+# No requiere librerias externas, solo las estandares de Python
+
+# El sistema utiliza unicamente:
+# - json (para los datos)
+# - os (para manejo de archivos)
+# - re (para validaciones con expresiones regulares)
+# - datetime (para fechas)
+# - typing (para type hints)
+
+# Todas las librerias vienen incluidas con Python 3.6+
