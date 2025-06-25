@@ -170,10 +170,10 @@ class CRMSystem:
             
             #Guardamos cliente
             
-            self.cliente[id_cliente] = cliente
+            self.clientes[id_cliente] = cliente
             self.guardar_datos()
             
-            print("\nClientere registrado correctametne")
+            print("\nCliente registrado correctamente")
             print(f"ID asignado:{id_cliente}")
             print(f"Fecha de registro:{cliente.fecha_registro}")
             
@@ -202,7 +202,7 @@ class CRMSystem:
             while True:
                 metodo = input("\nSelecciona un metodo de busqueda: ").strip()
                 
-                if metodo in ["1" , " 2"]:
+                if metodo in ["1" , "2"]:
                     break
                 
                 print("Opcion invalida: solo validas opcion 1 y 2")
@@ -492,7 +492,7 @@ class CRMSystem:
         
         #Mostrar resumen general
         
-        print(f"\nn --- RESUMEN GENERAL --- ")
+        print(f"\n --- RESUMEN GENERAL --- ")
         print(f"Total clientes: {total_clientes}")
         print(f"Total facturas emitidas: {total_facturas_sistema}")
         print(f"Ingresos totales: {ingresos_totales:.2f} €")

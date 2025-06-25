@@ -18,7 +18,7 @@ class Validador:
         True si el email es valido, false si no lo es 
         '''
         
-        patron = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2.}$'
+        patron = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$' #Con {2,} valida que la extension tenga 2 caracteres despues del correo (.com, .es ,etc)
         
         return re.match(patron,email) is not None
     
